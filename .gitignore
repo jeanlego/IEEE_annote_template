@@ -1,0 +1,6 @@
+*
+!*.tex
+!References.bib
+!IEEEtran.bst
+!*.pdf
+!.git*

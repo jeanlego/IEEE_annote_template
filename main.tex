@@ -1,0 +1,52 @@
+\documentclass[journal, onecolumn, 12pt]{IEEEtran}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{csquotes}
+\usepackage{url}
+\usepackage{authblk}
+\usepackage{filecontents}
+
+% change this to define a specific date
+% \date{September 19, 2019}
+
+%these change the IEEE tran settings for the references
+\begin{filecontents*}{IEEEsettings.bib}
+    % change CTLuse_annotation = "yes" to no if you dont want annotation
+    @IEEEtranBSTCTL{IEEEexample:BSTcontrol, 
+        CTLuse_annote = "yes",
+        CTLname_url_prefix = "[Online] Available: "
+    }
+
+\end{filecontents*}
+
+\title{
+    Your beautiful title:\\
+    An Annotated Bibliography
+}
+
+\author[1]{
+    your awesome name
+}
+
+\affil[1]{
+    Faculty of Computer Science,
+    University of New Brunswick,
+    Fredericton, 
+    New Brunswick, 
+    Canada
+
+    Email:\tt{your.unb.email@unb.ca}
+}
+
+\begin{document}
+
+    \maketitle
+    \nocite{*}
+
+
+    \bibliographystyle{IEEEtran}
+    \bibliography{IEEEsettings,References}
+
+\end{document}
+
+        
